@@ -4,7 +4,6 @@ import withPWA from "next-pwa";
 // Azure Static Web Apps 环境检测
 // ============================================================================
 const isAzure = process.env.AZURE_STATIC_WEB_APPS === "1";
-const isProduction = process.env.NODE_ENV === "production";
 
 const pwaConfig = withPWA({
   dest: "public",
